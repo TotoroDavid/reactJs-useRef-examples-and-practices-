@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CopyApp from './CopyApp'
+import FocusApp from './FocusApp'
+import LoadingApp from './LoadingApp'
+import MediaPlayer from './MediaPlayer'
+import RenderApp from './RenderApp'
+import ScrollAnimation from './ScrollAnimation'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>UseRef practice and examples </h1>
+      {/* <FocusApp /> */}
+      {/* <CopyApp /> */}
+      {/* <MediaPlayer /> */}
+      {/* <ScrollAnimation /> */}
+      {/* <RenderApp /> */}
+      <LoadingApp />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
